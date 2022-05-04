@@ -25,7 +25,7 @@ server.on('request', function(req, res){
     var filename = 'house.png'
     var infile = fs.createReadStream(filename, {flags: 'r'})
 
-    // pipe로 연결하여 아랑서 처리하도록 설정하기
+    // pipe로 연결하여 아랑서 처리하도록 설정하기 
     infile.pipe(res)
   });
   
